@@ -1,0 +1,153 @@
+/* font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+  font-style: normal; */
+
+/* font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: normal; */
+
+:root {
+  --text-color: #ffffff;
+  --bg-color: #121212;
+  --main-bg-color: #1e1e1e;
+  --box-shadow-glow: 0 0 10px rgba(255, 255, 255, 0.6);
+  --box-shadow-soft: 0 0 40px rgba(255, 255, 255, 0.3);
+  --text-shadow-soft: 0 0 8px rgba(255, 255, 255, 0.8),
+    0 0 5px rgba(255, 255, 255, 0.6);
+  --text-shadow-glow: 0 0 8px rgba(255, 255, 255, 0.8),
+    0 0 15px rgba(255, 255, 255, 0.6);
+}
+
+@keyframes watchbody {
+  0%,
+  100% {
+    box-shadow: var(--box-shadow-soft);
+  }
+  50% {
+    box-shadow: var(--box-shadow-glow);
+  }
+}
+
+@keyframes maintext {
+  0%,
+  50% {
+    text-shadow: var(--text-shadow-soft);
+  }
+  100% {
+    text-shadow: var(--text-shadow-glow);
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.video-bg {
+  position: fixed;
+  top: -120px;
+  left: -130px;
+  width: 1400px;
+  height: 100vh;
+  object-fit: cover;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+#Body {
+  max-width: 1300x;
+  max-height: 600px;
+  background-color: var(--main-bg-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+  transform: translateY(30%);
+}
+
+#Outer_Layer_One {
+  height: 400px;
+  width: 55%;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 10px;
+  animation: watchbody 3s infinite ease-in-out;
+  background-color: var(--bg-color);
+}
+
+#Outer_Layer_Sec {
+  border: 1px solid white;
+  border-radius: 12px;
+  padding: 30px 30px;
+  height: 100%;
+}
+
+#DaysShowing .DayList {
+  color: var(--text-color);
+  font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 18px;
+  opacity: 0.5;
+}
+
+#Am_Pm_Show .AmPm {
+  color: var(--text-color);
+  font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 18px;
+  opacity: 0.5;
+}
+
+#Am_Pm_Show span {
+  height: 22px;
+  width: 1px;
+  background-color: var(--text-color);
+}
+
+#DateShowing {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+#DateShowing .Date_Show {
+  color: var(--text-color);
+  font-family: "Nunito", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 22px;
+  opacity: 0.5;
+}
+
+.Date {
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 22px;
+  animation: maintext 3s infinite ease-in-out;
+}
+
+#TimeShow h1 {
+  font-family: "Spectral", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 80px;
+}
+
+#TimeShow h1 span {
+  animation: maintext 3s infinite ease-in-out;
+}
+
+#Main_All_ALign {
+  align-items: center;
+}
+
+.hr {
+  background-color: white;
+  height: .25px;
+  margin: 10px 0px 20px;
+}
