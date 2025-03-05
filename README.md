@@ -1,7 +1,5 @@
 Digital Watch Using The Html Css And Javascript
 
-Here's a refined LinkedIn post with four structured sections, keeping it professional and engaging without mentioning days explicitly:
-
 🚀 Built a Modern Digital Watch! ⏳
 🔹 Project Overview
 I created a fully responsive Digital Watch using HTML, CSS, Bootstrap, and JavaScript. This project blends real-time functionality with a modern UI for a sleek experience.
